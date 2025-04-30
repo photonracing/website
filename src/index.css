@@ -21,6 +21,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: #F8E400;
+  font-family: 'Poppins';
 }
 
 #intro {
@@ -38,6 +39,7 @@ footer{
   background-color: #141414;
   color: white;
   margin: 0;
+  bottom: 0px;
 }
 
 #foot{
