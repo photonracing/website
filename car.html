@@ -1,195 +1,225 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./src/index.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
-  <body>
+  <link rel="stylesheet" href="./src/index.css">
 
-    <header>
-        <div id="intro">
-          <div class="row">
-            <div class="col my-auto" style="text-align: start; display: inline-block;">
-              <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="margin: 3%" type="button">
-                <img class="bi bi-images glyphicon glyphicon-plus" src="./media/icons/three-horizontal-lines-icon.svg" width="13%" height="13%" fill="black">
-              </button>
-            </div>
-            <div class="col my-auto" style="text-align: center;">
-              <a href="/website/"><img src="./media/logos/logo.jpg" style="width: 38%;"></a>
-            </div>
-            <div class="col my-auto" style="text-align: end;">
-              <a href="https://www.instagram.com/photonracing_?igsh=MXF6OWhqejV3Ym9heg=="><img src="./media/icons/instagram.svg" style="width: 10%; padding-right: 4%;"></a>
-              <a href="https://www.tiktok.com/@photon.racing?_t=ZN-8vyGKKi6A3a&_r=1"><img src="./media/icons/tiktok.svg" style="width: 10%; padding-right: 4%;"></a>
-            </div>
-          </div>
-        </div>
-    </header>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-    <div style="border: solid; border-color: white; border-width: 30pt;">
-        <div class="my-auto" style="text-align: center;">
-            <h1 style="margin-top: 3%;">The car</h1>
-    
-            <div class="container" style="padding-bottom: 3%;">
-                <div class="row justify-content-around" style="padding-top: 3%;">
-                    <div class="col-sm text-center my-auto">
-                        <h2>Learning from our mistakes</h2>
-                        The main thing which we learned from the previous race
-                        was that we have to consider some tolerance when
-                        creating the components to fit both the regulation limit
-                        and also the joint created on the car body.
-                        Another aspect that we learned from was that the
-                        weight of the car bears greater importance than the pure
-                        aerodynamic performance, since the acceleration lost is
-                        significant. Therefore, while creating the car we decided
-                        to sacrifice some of the aerodynamics of the car to
-                        reduce its total weight.
-                    </div>
-                    <div class="col-sm text-center my-auto">
-                        <h2>Inspiration</h2>
-                        While designing the car we took inspiration from various race cars. Our main inspiration still
-                        remained
-                        the RB
-                        x2010 as visible from the support structure of the front
-                        wing and from the overall shape of the car. Regarding
-                        the sidepods design and the attachment behind the rear
-                        wheels, we also drew ideas from the 2024 F1 in School
-                        world champion car. The profile of the rear wing was
-                        influenced by the rear wing used in IndyCar during the
-                        Indy 500, even though we needed to adapt it to fit the
-                        regulations because of the not foreseen one pillar design.
-                        To stabilize the car, we took inspiration from the design
-                        of the inside part of the sidepods in the Lotus 79, the
-                        first car to take full advantage of the ground effect.
-                        Even if the sidepods are not as close to the ground as in
-                        Lotus 79, they help to maintain the car stable and avoid
-                        up force, without a significant increase to the drag
-                    </div>
-                </div>
-    
-                <div class="row justify-content-around" style="padding-top: 3%;">
-                    <div class="col-sm text-center my-auto">
-                        <img src="./media/carEv/body/ev1.png" class="img-thumbnail" style="margin: 1.5%;">
-                    </div>
-                    <div class="col-sm text-center my-auto">
-                        <h2>3D Modelling</h2>
-                        Before starting to design the car we looked into the
-                        most popular 3D modeling techniques to choose the one
-                        that fitted best our requirements. Unfortunately, due to
-                        the relatively small amount of time and our lack of prior
-                        knowledge about the recommended software Fusion 360,
-                        when we started the project, we were unable to fully
-                        follow a specific kind of modeling technique. We
-                        adopted a mixture between different techniques and we
-                        mainly followed the tips contained in the tutorials that
-                        we were given. The two techniques we took inspiration
-                        from are subdivision modeling and surface modeling
-                    </div>
-                </div>
-    
-                <div class="row justify-content-around" style="padding-top: 3%;">
-                    <div class="col-sm text-center my-auto">
-                        <h2>CFD simulating</h2>
-                        We used the suggested Ansys suite for all of our CDF tests. We tested every single model and every
-                        slight change to
-                        inform our modifications at best. We imported the model and all the necessary materials for the car
-                        model in the
-                        simulation software, in order to have the most precise data possible. We run the computation with
-                        the
-                        model in the
-                        ”air” default model, at a velocity of 20m/s to slightly increase the effect of the drag.
-                        The data shown in the table and the graph above are
-                        extracted from the testing of our main models and
-                        reflect the different ideas we had in terms of
-                        aerodynamic solutions. Since the Discovery software is
-                        random-based, we ran the simulation several times not
-                        only on the same pc, but we also tried different
-                        hardware setups in order to minimize the impact of the
-                        randomization.
-                        As is shown in the calculations, the downforce (or
-                        symmetrically the upforce) doesn’t affect significantly
-                        the global performance of the car. On the other hand,
-                        drag could have a big impact on the final speed, so we
-                        focused our efforts mostly on maintaining it as low as
-                        possible.
-                    </div>
-                    <div class="col-sm text-center my-auto">
-                        <img src="./media/sims/sim1.jpg" class="img-thumbnail" style="margin: 1.5%;">
-                        <img src="./media/sims/sim2.jpg" class="img-thumbnail" style="margin: 1.5%;">
-                    </div>
-                </div>
-    
-                <div class="row justify-content-around" style="padding-top: 3%;">
-                    <div class="col-sm text-center my-auto">
-                        <img src="./media/carEv/body/car_production.png" class="img-thumbnail" style="width: 60%;">
-                    </div>
-                    <div class="col-sm text-center my-auto">
-                        <h2>Manifacturing</h2>
-                        Thanks to our partner Famar, we were able to craft our
-                        body at Ilma. We started from the block provided, and
-                        by precisely milling it, we took off materials giving life to
-                        our prototype. Since we didn’t have access to five axis
-                        machinery, we had to first mill the bottom part of the
-                        body, then create a support structure to keep it stable
-                        and finally mill also its upper part. In the process were
-                        used drills of different sizes, from larger ones to clear up
-                        the exceeding material to the smallest one they had, 3
-                        mm, to refine the car. We also made our own tether
-                        guide lines, turning them out of aluminum, so that we
-                        could secure them by screw threads
-                        Apart from the body and the tether guide lines every
-                        other component, that is the wings, the halo and the
-                        support structures, is 3D-printed. We did a bit of
-                        research to find the best material to use, it turned out
-                        that PLA was one of the best options in terms of
-                        availability, costs and additionally it allows for easy and
-                        perfectly fitted assembly by slightly heating the parts.
-                        For the axles we used the ones we were provided with,
-                        having pretty low friction and being really stable
-                    </div>
-                </div>
-    
-            </div>
-    
-        </div>
+
+
+<body>
+
+  <div class="z-4 topbarr" id="intro">
+    <div class="row">
+      <div class="col my-auto" style="text-align: start; display: inline-block;">
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="margin: 3%"
+          type="button">
+          <img class="bi bi-images glyphicon glyphicon-plus" src="./media/icons/three-horizontal-lines-icon.svg"
+            width="13%" height="13%" fill="black">
+        </button>
+      </div>
+      <div class="col my-auto" style="text-align: center;">
+        <a href="/website/"><img src="./media/logos/logo.jpg" style="width: 22%;"></a>
+      </div>
+      <div class="col my-auto" style="text-align: end;">
+        <a href="https://www.instagram.com/photonracing_?igsh=MXF6OWhqejV3Ym9heg=="><img
+            src="./media/icons/instagram.svg" style="width: 8%; padding-right: 4%;"></a>
+        <a href="https://www.tiktok.com/@photon.racing?_t=ZN-8vyGKKi6A3a&_r=1"><img src="./media/icons/tiktok.svg"
+            style="width: 8%; padding-right: 4%;"></a>
+      </div>
     </div>
+  </div>
 
+  <div class="bg"></div>
 
-    <footer style="margin: 0cm;">
-        <div id="foot" style="bottom: 0px; background-color: black; margin: 0;">
-        Photon Racing Team<br>
-        email: <a href="mailto:photon.racing@pascalgiaveno.it">photon.racing@pascalgiaveno.it</a><br>
-        All rights reserved.<br>
-        </div>
-    </footer>
-
-  </body>
-
-
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-    aria-labelledby="offcanvasWithBothOptionsLabel">
-    <div class="offcanvas-header">
-      <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Index</h2>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <section class="section slideSection ">
+    <div class="slide z-2" style="background-color: transparent">
+      <div class="row justify-content-around"
+        style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
+        <h1 style="margin-top: 3%;">The car</h1>
+      </div>
     </div>
-    <div class="offcanvas-body">
-        <a href="/website/team">Meet the team</a><br>
+  </section>
+
+  <section class="section slideSection ">
+    <div class="slide z-2" style="background-color: transparent">
+      <div class="row justify-content-around"
+        style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
+        <div class="col-sm text-center my-auto">
+          <h2>Learning from our mistakes</h2>
+          The main thing which we learned from the previous race
+          was that we have to consider some tolerance when
+          creating the components to fit both the regulation limit
+          and also the joint created on the car body.
+          Another aspect that we learned from was that the
+          weight of the car bears greater importance than the pure
+          aerodynamic performance, since the acceleration lost is
+          significant. Therefore, while creating the car we decided
+          to sacrifice some of the aerodynamics of the car to
+          reduce its total weight.
+        </div>
+        <div class="col-sm text-center my-auto">
+          <h2>Inspiration</h2>
+          While designing the car we took inspiration from various race cars. Our main inspiration still
+          remained
+          the RB
+          x2010 as visible from the support structure of the front
+          wing and from the overall shape of the car. Regarding
+          the sidepods design and the attachment behind the rear
+          wheels, we also drew ideas from the 2024 F1 in School
+          world champion car. The profile of the rear wing was
+          influenced by the rear wing used in IndyCar during the
+          Indy 500, even though we needed to adapt it to fit the
+          regulations because of the not foreseen one pillar design.
+          To stabilize the car, we took inspiration from the design
+          of the inside part of the sidepods in the Lotus 79, the
+          first car to take full advantage of the ground effect.
+          Even if the sidepods are not as close to the ground as in
+          Lotus 79, they help to maintain the car stable and avoid
+          up force, without a significant increase to the drag
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section slideSection two">
+    <div class="slide z-2" style="background-color: transparent">
+      <div class="row justify-content-around"
+        style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
+        <div class="col-sm text-center my-auto">
+          <h2>3D Modelling</h2>
+          Before starting to design the car we looked into the
+          most popular 3D modeling techniques to choose the one
+          that fitted best our requirements. Unfortunately, due to
+          the relatively small amount of time and our lack of prior
+          knowledge about the recommended software Fusion 360,
+          when we started the project, we were unable to fully
+          follow a specific kind of modeling technique. We
+          adopted a mixture between different techniques and we
+          mainly followed the tips contained in the tutorials that
+          we were given. The two techniques we took inspiration
+          from are subdivision modeling and surface modeling
+        </div>
+        <div class="col-sm text-center my-auto">
+          <img src="./media/carEv/body/ev1.png" class="img-thumbnail" style="margin: 1.5%; width: 95%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section slideSection ">
+    <div class="slide z-2" style="background-color: transparent">
+      <div class="row justify-content-around"
+        style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
+        <div class="col-sm text-center my-auto">
+          <h2>CFD simulating</h2>
+          We used the suggested Ansys suite for all of our CDF tests. We tested every single model and every
+          slight change to
+          inform our modifications at best. We imported the model and all the necessary materials for the car
+          model in the
+          simulation software, in order to have the most precise data possible. We run the computation with
+          the
+          model in the
+          ”air” default model, at a velocity of 20m/s to slightly increase the effect of the drag.
+          The data shown in the table and the graph above are
+          extracted from the testing of our main models and
+          reflect the different ideas we had in terms of
+          aerodynamic solutions. Since the Discovery software is
+          random-based, we ran the simulation several times not
+          only on the same pc, but we also tried different
+          hardware setups in order to minimize the impact of the
+          randomization.
+          As is shown in the calculations, the downforce (or
+          symmetrically the upforce) doesn’t affect significantly
+          the global performance of the car. On the other hand,
+          drag could have a big impact on the final speed, so we
+          focused our efforts mostly on maintaining it as low as
+          possible.
+        </div>
+        <div class="col-sm text-center my-auto">
+          <img src="./media/sims/sim1.jpg" class="img-thumbnail" style="margin: 1.5%; width: 95%;">
+          <img src="./media/sims/sim2.jpg" class="img-thumbnail" style="margin: 1.5%; width: 95%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section slideSection ">
+    <div class="slide z-2" style="background-color: transparent">
+      <div class="row justify-content-around"
+        style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
+        <div class="col-sm text-center my-auto">
+          <h2>Manifacturing</h2>
+            Thanks to our partner Famar, we were able to craft our
+            body at Ilma. We started from the block provided, and
+            by precisely milling it, we took off materials giving life to
+            our prototype. Since we didn’t have access to five axis
+            machinery, we had to first mill the bottom part of the
+            body, then create a support structure to keep it stable
+            and finally mill also its upper part. In the process were
+            used drills of different sizes, from larger ones to clear up
+            the exceeding material to the smallest one they had, 3
+            mm, to refine the car. We also made our own tether
+            guide lines, turning them out of aluminum, so that we
+            could secure them by screw threads
+            Apart from the body and the tether guide lines every
+            other component, that is the wings, the halo and the
+            support structures, is 3D-printed. We did a bit of
+            research to find the best material to use, it turned out
+            that PLA was one of the best options in terms of
+            availability, costs and additionally it allows for easy and
+            perfectly fitted assembly by slightly heating the parts.
+            For the axles we used the ones we were provided with,
+            having pretty low friction and being really stable
+        </div>
+        <div class="col-sm text-center my-auto">
+          <img src="./media/carEv/body/car_production.png" class="img-thumbnail" style="width: 60%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div id="foot">
+      Photon Racing Team<br>
+      email: <a href="mailto:photon.racing@pascalgiaveno.it">photon.racing@pascalgiaveno.it</a><br>
+      All rights reserved.<br>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="./src/backgroundChange.js"></script>
+
+</body>
+
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Index</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <a href="/website/team">Meet the team</a><br>
     <a href="/website/car">Know more about the car</a><br>
     <a href="/website/working">Discover our story</a><br>
     <a href="/website/working">How we cared about the environment</a><br>
     <a href="/website/#sponsors">Sponsors</a><br>
     <a href="/website/working">Portofolios</a>
-    </div>
   </div>
+</div>
+
 </html>
