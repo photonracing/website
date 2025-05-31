@@ -1,12 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray('#intro').forEach(topbarr => {
-    ScrollTrigger.create({
-        trigger: topbarr,
-        start: 'top top',
-        animation: gsap.to("#intro", { position:"fixed", paused:"true"} ),
-        toggleAction: "restart none none reverse",
-        markers: true,
-        pin: true
-    })
-});
+  gsap.utils.toArray("#intro").forEach((logoRef) => {
+    gsap.fromTo(
+    ".logoRef",
+      { opacity: 0},
+      {
+        opacity: 1,
+        duration: 0.2,
+        scrollTrigger: {
+          trigger: "#intro",
+          start: "top top",
+          toggleActions: "play none none reverse"
+        },
+      }
+    );
+  });
