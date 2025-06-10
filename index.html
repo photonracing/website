@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <title>Photon Racing</title>
+  <link rel="icon" type="image/x-icon" href="./media/favicon.jpg">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,12 +25,20 @@
 <body>
 
   <section class="section one">
-    <div class=" z-0" style="background-color: white; text-align: center; 
-    width: 100vw;
-    height: 100vh;">
-      <img class="bi bi-images fulllogo" src="./media/logos/logo_full.png">
+    <div class="video-container" style="position: relative; width: 100vw; height: 100vh; background-color: white; text-align: center;">
+      
+      <video autoplay muted loop id="myVideo" 
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+        <source src="./media/others/videoInizio.mp4" type="video/mp4">
+      </video>
+  
+      <img class="bi bi-images fulllogo" 
+           src="./media/logos/logo_full.png" 
+           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+      
     </div>
   </section>
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -56,7 +67,8 @@
   </div>
 
   <script src="./src/navbarAnimation.js"></script>
-
+  
+  <div class="bg2"></div>
   <div class="bg"></div>
 
   <section class="section slideSection ">
@@ -90,7 +102,7 @@
           </div>
         </div>
         <div class="col-sm text-center">
-          <img src="./media/car/pic1.JPG" class="img-thumbnail">
+          <img src="./media/car/pic1.jpg" class="img-thumbnail">
         </div>
       </div>
     </div>
@@ -147,35 +159,35 @@
               style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(255,255,255, 0.85); margin: 0;">
               <div class="col-sm my-auto text-center">
                 <a href="https://www.famargroup.com/"><img src="./media/logos/Logo_famar.svg" class="img"
-                    style="width:75%;"></a>
+                    style="max-width:75%; height: 60%;"></a>
               </div>
               <div class="col-sm my-auto  text-center">
                 <a href="https://www.ilmamodelli.eu/"><img src="./media/logos/logo_ilma.jpeg" class="img"
-                    style="width:65%;"></a>
+                    style="max-width:65%;  height: 60%;"></a>
               </div>
             </div>
             <div class="row justify-content-around"
               style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(255,255,255, 0.85); margin: 0;">
-              <div class="col-sm my-auto  text-center">
-                <a href="https://www.mitorsrl.info/"><img src="./media/logos/Logo_mitor.svg" class="img"
-                    style="width:100%;"></a>
+              <div class="col-sm my-auto  text-center logoes2">
+                <a href="https://www.mitorsrl.info/"><img src="./media/logos/Logo_mitor.svg" class="img logoes2"
+                    style="max-width:80%;  height: 10%;"></a>
               </div>
-              <div class="col-sm my-auto text-center">
-                <a href="https://motivexlab.com/"><img src="./media/logos/Logo_motivexLab.svg" class="img"
-                    style="width:120%;"></a>
+              <div class="col-sm my-auto text-center logoes2">
+                <a href="https://motivexlab.com/"><img src="./media/logos/Logo_motivexLab.svg" class="img logoes2"
+                    style="max-width:70%;  height: 60%;"></a>
               </div>
-              <div class="col-sm my-auto text-center">
+              <div class="col-sm my-auto text-center logoes2">
                 <a
                   href="https://www.superstuff.it/?_gl=1*1rqlyy7*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwlMfABhCWARIsADGXdy-JFbPnS3mk8atn2DPUEt7rnqEXZ3ANcTlYmRCkXr3aVKrV0_KKFCAaAjV5EALw_wcB"><img
-                    src="./media/logos/Logo_superstuff.svg" class="img" style="width:110%;"></a>
+                    src="./media/logos/Logo_superstuff.svg" class="img logoes2" style="max-width:90%;  height: 60%;"></a>
               </div>
-              <div class="col-sm my-auto text-center">
-                <a href="https://shop.goldfish-idee.com/home"><img src="./media/logos/logo_goldfish.png" class="img"
-                    style="width:110%;"></a>
+              <div class="col-sm my-auto text-center logoes2">
+                <a href="https://shop.goldfish-idee.com/home"><img src="./media/logos/logo_goldfish.png" class="img logoes2"
+                    style="max-width:90%;  height: 45%;"></a>
               </div>
-              <div class="col-sm my-auto text-center">
-                <a href="https://genznow.it/"><img src="./media/logos/logo_genznow.png" class="img"
-                    style="width:60%;"></a>
+              <div class="col-sm my-auto text-center logoes2">
+                <a href="https://genznow.it/"><img src="./media/logos/logo_genznow.png" class="img logoes2"
+                    style="max-width:45%;  height: 60%;"></a>
               </div>
             </div>
           </div>
@@ -184,18 +196,20 @@
     </div>
   </section>
 
-  <footer>
-    <div id="foot">
-      Photon Racing Team<br>
-      email: <a href="mailto:photon.racing@pascalgiaveno.it">photon.racing@pascalgiaveno.it</a><br>
-      All rights reserved.<br>
-    </div>
-  </footer>
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="./src/backgroundChange.js"></script>
 
 </body>
+
+
+<footer>
+  <div id="foot">
+    Photon Racing Team<br>
+    email: <a href="mailto:photon.racing@pascalgiaveno.it">photon.racing@pascalgiaveno.it</a><br>
+    All rights reserved.<br>
+  </div>
+</footer>
 
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
   aria-labelledby="offcanvasWithBothOptionsLabel">
