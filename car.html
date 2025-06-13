@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <title>Photon Racing</title>
+  <link rel="icon" type="image/x-icon" href="./media/favicon.jpg">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,50 +17,57 @@
   <link rel="stylesheet" href="./src/index.css">
 
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 
 
 
 <body>
 
-  <div class="z-4 topbarr" id="intro">
+  <div class="z-4 topbarr intro" id="intro">
     <div class="row">
       <div class="col my-auto" style="text-align: start; display: inline-block;">
         <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="margin: 3%"
           type="button">
-          <img class="bi bi-images glyphicon glyphicon-plus" src="./media/icons/three-horizontal-lines-icon.svg"
-            width="13%" height="13%" fill="black">
+          <i class="fa fa-bars "></i>
         </button>
       </div>
-      <div class="col my-auto" style="text-align: center;">
-        <a href="/website/"><img src="./media/logos/logo.jpg" style="width: 22%;"></a>
+      <div class="col my-auto logoRef" style="text-align: center;">
+        <a href="/website/#intro"><img src="./media/logos/logo.jpg" style="width: 38%;"></a>
       </div>
       <div class="col my-auto" style="text-align: end;">
         <a href="https://www.instagram.com/photonracing_?igsh=MXF6OWhqejV3Ym9heg=="><img
-            src="./media/icons/instagram.svg" style="width: 8%; padding-right: 4%;"></a>
+            src="./media/icons/instagram.svg" style="width: 12%; padding-right: 4%;"></a>
         <a href="https://www.tiktok.com/@photon.racing?_t=ZN-8vyGKKi6A3a&_r=1"><img src="./media/icons/tiktok.svg"
-            style="width: 8%; padding-right: 4%;"></a>
+            style="width: 12%; padding-right: 4%;"></a>
       </div>
     </div>
   </div>
 
-  <div class="bg"></div>
+  <div class="bg2"></div>
+  <div class="bg" style="background: url(http://localhost:5173/media/car/render.png)  center / cover no-repeat;"></div>
 
   <section class="section slideSection ">
     <div class="slide z-2" style="background-color: transparent">
       <div class="row justify-content-around"
         style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
-        <h1 style="margin-top: 3%;">The car</h1>
+
+        <div class="col-12 col-md-7 my-auto text-center"  style="text-align: left"> <img src="./media/car/esploso.png" class="img-thumbnail"></div>
+        <div class="col-12 col-md-5 my-auto"  ><h1 style="margin-top: 3%; text-align: left;">The car</h1></div>
+
       </div>
     </div>
+
   </section>
 
   <section class="section slideSection ">
     <div class="slide z-2" style="background-color: transparent">
       <div class="row justify-content-around"
         style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm text-center my-auto">
           <h2>Learning from our mistakes</h2>
           The main thing which we learned from the previous race
           was that we have to consider some tolerance when
@@ -70,7 +80,7 @@
           to sacrifice some of the aerodynamics of the car to
           reduce its total weight.
         </div>
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm text-center my-auto">
           <h2>Inspiration</h2>
           While designing the car we took inspiration from various race cars. Our main inspiration still
           remained
@@ -98,7 +108,7 @@
     <div class="slide z-2" style="background-color: transparent">
       <div class="row justify-content-around"
         style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm my-auto" style="text-align: right">
           <h2>3D Modelling</h2>
           Before starting to design the car we looked into the
           most popular 3D modeling techniques to choose the one
@@ -112,7 +122,7 @@
           we were given. The two techniques we took inspiration
           from are subdivision modeling and surface modeling
         </div>
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm text-center my-auto">
           <img src="./media/carEv/body/ev1.png" class="img-thumbnail" style="margin: 1.5%; width: 95%;">
         </div>
       </div>
@@ -123,7 +133,7 @@
     <div class="slide z-2" style="background-color: transparent">
       <div class="row justify-content-around"
         style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm my-auto" style="text-align: right">
           <h2>CFD simulating</h2>
           We used the suggested Ansys suite for all of our CDF tests. We tested every single model and every
           slight change to
@@ -148,7 +158,7 @@
           focused our efforts mostly on maintaining it as low as
           possible.
         </div>
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm text-center my-auto">
           <img src="./media/sims/sim1.jpg" class="img-thumbnail" style="margin: 1.5%; width: 95%;">
           <img src="./media/sims/sim2.jpg" class="img-thumbnail" style="margin: 1.5%; width: 95%;">
         </div>
@@ -160,7 +170,7 @@
     <div class="slide z-2" style="background-color: transparent">
       <div class="row justify-content-around"
         style=" padding-bottom: 3%;  padding-top: 3%;  background-color: rgba(248,228,0, 0.85); margin: 0%;">
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm my-auto" style="text-align: right">
           <h2>Manifacturing</h2>
             Thanks to our partner Famar, we were able to craft our
             body at Ilma. We started from the block provided, and
@@ -184,7 +194,7 @@
             For the axles we used the ones we were provided with,
             having pretty low friction and being really stable
         </div>
-        <div class="col-sm text-center my-auto">
+        <div class="col-12 col-md-sm text-center my-auto">
           <img src="./media/carEv/body/car_production.png" class="img-thumbnail" style="width: 60%;">
         </div>
       </div>
@@ -194,14 +204,13 @@
 
   <footer>
     <div id="foot">
-      Photon Racing Team<br>
-      email: <a href="mailto:photon.racing@pascalgiaveno.it">photon.racing@pascalgiaveno.it</a><br>
-      All rights reserved.<br>
+      Photon Racing Team.
+      Email: <a href="mailto:photon.racing@pascalgiaveno.it">photon.racing@pascalgiaveno.it</a>.
+      All rights reserved.
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="./src/backgroundChange.js"></script>
 
 </body>
 
@@ -215,10 +224,9 @@
   <div class="offcanvas-body">
     <a href="/website/team">Meet the team</a><br>
     <a href="/website/car">Know more about the car</a><br>
-    <a href="/website/working">Discover our story</a><br>
-    <a href="/website/working">How we cared about the environment</a><br>
+    <a href="/website/ourStory">Discover our story</a><br>
+    <a href="/website/sustainability">Sustainability</a><br>
     <a href="/website/#sponsors">Sponsors</a><br>
-    <a href="/website/working">Portofolios</a>
   </div>
 </div>
 
